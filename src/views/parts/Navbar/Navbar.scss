@@ -1,0 +1,20 @@
+
+.navbar-container {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    padding: 0 12px;
+    .logo {
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            height: auto; /** Safari compatible */
+        }
+    }
+
+}

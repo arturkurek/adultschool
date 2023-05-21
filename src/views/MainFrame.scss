@@ -1,0 +1,54 @@
+@import '../variables';
+
+
+
+
+
+.app-container {
+  width: 100%;
+  background-color: red;
+  padding: 0 8px;
+
+  /**
+  * mobile first!
+  */
+  max-width: 100%;
+  margin: 0;
+  
+
+
+  // tablet size
+  @media ( min-width: $screenSize_mobile) and (max-width: $screenSize_tablet ) {
+    background-color: blue;
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+
+  // small destkop size
+  @media ( min-width: $screenSize_tablet) and (max-width: $screenSize_smallDesktop ) {
+    background-color: green;
+    max-width: 100%;
+    padding: 0 56px;
+  }
+
+
+  // normal destkop size
+  @media ( min-width: $screenSize_smallDesktop) and (max-width: $screenSize_normalDesktop ) {
+    background-color: yellowgreen;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+
+  // large destkop size
+  @media ( min-width: $screenSize_normalDesktop ) {
+    background-color: palevioletred;
+    max-width: 1280px;
+    margin: 0 auto
+  }
+
+  .title {
+    margin: 48px 0;
+  }
+}
