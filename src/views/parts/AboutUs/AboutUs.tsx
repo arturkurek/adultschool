@@ -17,7 +17,6 @@ export const AboutUs = () => {
         <div>
             <h3>Zaczynaliśmy od nauczania dzieci i młodzieży, ale coraz więcej Rodziców przychodziło do nas z prośbą: „Ja też chciałbym/-łabym nauczyć się języka angielskiego!”. Stąd zrodził się pomysł na kursy dla osób dorosłych.</h3>    
         </div>
-        
     </div>
 }
 
