@@ -15,10 +15,29 @@ $screenSize_normalDesktop: 1360px;
 
 
 :root {
-
     --tile-background: #4551dd;
     --white-text: #FFFFFF;
     --dark-text: #888888;
     --light-text: #BBBBBB;
+}
 
+
+
+@mixin responsiveContainer() {
+    @media screen and (min-width: $screenSize_mobile) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    @media screen and (min-width: $screenSize_tablet) {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    @media screen and (min-width: $screenSize_smallDesktop) {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    @media screen and (min-width: $screenSize_normalDesktop) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }

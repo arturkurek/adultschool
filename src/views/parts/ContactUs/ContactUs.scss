@@ -1,3 +1,4 @@
+@import "../../../variables";
 
 .contact-us {
 
@@ -9,13 +10,12 @@
         .two-parts {
             display: flex;
             flex-direction: row;
+            justify-content: center;
 
             .part {
-                width: 50%;
     
                 &.left {
-                    margin: 0 auto;
-                    max-width: 580px;
+                    max-width: 570px;
                     img {
                         width: 100%;
                         height: auto;
@@ -23,10 +23,13 @@
                 }
     
                 &.right {
+                    padding: 12px;
                     .form-title {
                         h2 {
                             text-align: center;
                             font-size: 36px;
+                            margin-top: 0;
+                            margin-bottom: 0;
                         }
                     }
     
@@ -40,7 +43,7 @@
                             .form-group {
                                 display: flex;
                                 flex-direction: column;
-                                padding: 20px 0;
+                                padding: 14px 0;
     
                                 &.vertical {
                                     flex-direction: row;
@@ -95,7 +98,8 @@
             display: flex;
             flex-direction: row;;
             gap: 4%;
-            padding: 16px 24px 42px 24px;
+            // padding: 42px 24px;
+            margin: 56px 24px;
             justify-content: center;
             flex-wrap: wrap;
 

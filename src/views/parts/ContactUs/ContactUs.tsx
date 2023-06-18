@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "./ContactUs.scss";
 
 interface ContactUsState {
@@ -132,7 +132,7 @@ export const ContactUs = () => {
                                     checked={state.acceptTerms}
                                     onChange={(e) => setState({...state, acceptTerms: e.target.checked })}
                                 />
-                                <span>Akceptuję <a href="#">Warunki</a></span>
+                                <span>Akceptuję <a href="/warunki">Warunki</a></span>
                             </div>
                             <div className="form-group vertical center">
                                 <input 

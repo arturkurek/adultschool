@@ -5,56 +5,61 @@
 
 
 .app-container {
-  width: 100%;
+    width: 100%;
 
-  /**
-  * mobile first!
-  */
-  max-width: 100%;
-  margin: 0;
-  
-
-
-  // tablet size
-  @media ( min-width: $screenSize_mobile) and (max-width: $screenSize_tablet ) {
+    /**
+    * mobile first!
+    */
     max-width: 100%;
-    padding: 0 24px;
-  }
+    margin: 0;
 
 
-  // small desktop size
-  @media ( min-width: $screenSize_tablet) and (max-width: $screenSize_smallDesktop ) {
-    max-width: 100%;
-    padding: 0 56px;
-  }
+    // tablet size
+    @media ( min-width: $screenSize_mobile) and (max-width: $screenSize_tablet ) {
+        max-width: 100%;
+        padding: 0 24px;
+    }
 
 
-  // normal desktop size
-  @media ( min-width: $screenSize_smallDesktop) and (max-width: $screenSize_normalDesktop ) {
-    // max-width: 900px;
-    margin: 0 auto;
-  }
-  
-
-  // large desktop size
-  @media ( min-width: $screenSize_normalDesktop ) {
-    // max-width: 1280px;
-    margin: 0 auto
-  }
-
-  .title {
-    margin: 48px 0;
-  }
+    // small desktop size
+    @media ( min-width: $screenSize_tablet) and (max-width: $screenSize_smallDesktop ) {
+        max-width: 100%;
+        padding: 0 56px;
+    }
 
 
-  .section-title {
-    font-size: 50px;
-    font-weight: 700;
-  }
+    // normal desktop size
+    @media ( min-width: $screenSize_smallDesktop) and (max-width: $screenSize_normalDesktop ) {
+        // max-width: 900px;
+        margin: 0 auto;
+    }
 
-  .section-subtitle {
-    font-size: 28px;
-    font-weight: 400;
-  }
+
+    // large desktop size
+    @media ( min-width: $screenSize_normalDesktop ) {
+        // max-width: 1280px;
+        margin: 0 auto
+    }
+
+    .title {
+        margin: 48px 0;
+    }
+
+
+    .section-title {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .section-subtitle {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    
+    section {
+        @include responsiveContainer();
+    }
+
 
 }
