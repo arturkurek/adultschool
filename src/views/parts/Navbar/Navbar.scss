@@ -1,0 +1,28 @@
+
+.navbar-container {
+    width: 80%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    .logo {
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        img {
+            max-width: 100%;
+            height: auto; /** Safari compatible */
+        }
+    }
+
+    .hamburger {
+        width: 40px;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,54 @@
+.about-us { 
+
+
+    .motto-container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        position: relateive;
+        overflow: hidden;
+        
+        h3 {
+            padding: 20px;
+            background-color: #4551dd;
+            border-radius: 10px;
+            color: white;
+        }
+    
+        h4 {
+            width: fit-content;
+            padding: 10px;
+            background-color: #4551dd;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .woman {
+            width: 500px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fade-in 1s ease-in forwards;
+        }
+    
+        .motto {
+            margin: 12px 0;
+            overflow: hidden;
+            transform: translateY(100%);
+            animation: slide-in-from-bottom 1s forwards;
+        }
+    }
+
+
+    .about-us-container {
+
+    }
+
+    
+
+}
+
+
