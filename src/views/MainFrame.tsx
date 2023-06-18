@@ -6,6 +6,7 @@ import { OurMethods } from './parts/OurMethods/OurMethods';
 import { ContactUs } from './parts/ContactUs/ContactUs';
 import { SignUp } from './parts/SignUp/SignUp';
 import { OurLectors } from './parts/OurLectors/OurLectors';
+import { OurOffer } from './parts/OurOffer/OurOffer';
 
 
 type Props = {
@@ -19,6 +20,7 @@ export const MainFrame = ( { children } : Props ) => {
         <AboutUs></AboutUs>
         <OurMethods></OurMethods>
         <OurLectors></OurLectors>
+        <OurOffer></OurOffer>
         <SignUp></SignUp>
         <ContactUs></ContactUs>
         { children }

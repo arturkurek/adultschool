@@ -1,4 +1,57 @@
 
 .our-lectors {
-    
+    background-color: var(--tile-background);
+    color: white;
+    padding: 80px 12px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .lectors-container {
+        padding: 28px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .lectors-tile {
+
+            background-color: var(--white-text);
+            border-radius: 20px;
+            max-width: 320px;
+            color: var(--dark-text);
+            min-width: 240px;
+
+            .tile-image {
+                padding: 24px;
+                
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
+            }
+
+            .tile-title {
+                padding: 12px;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .tile-content {
+                padding: 24px;
+                text-align: center;
+                font-style: italic;
+                line-height: 22px;
+            }
+        }
+
+    }
+
 }
