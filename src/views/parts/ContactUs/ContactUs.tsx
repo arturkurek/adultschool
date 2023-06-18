@@ -1,8 +1,4 @@
-import React from "react";
-
 import "./ContactUs.scss";
-
-
 
 
 export const ContactUs = () => {

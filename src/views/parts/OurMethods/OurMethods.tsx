@@ -1,19 +1,15 @@
-import React from "react";
-
 import "./OurMethods.scss";
 
 
 export const OurMethods = () => {
-
-
 
     return (
         <section className="our-methods">
             <h1 className='section-title'>NASZE METODY</h1>
             <div className="methods-container">
                 <ul>
-                    <li>Na naszych kursach łączymy metody tradycyjne z nowoczesnymi, ale przede wszystkim – dostosowujemy sposób nauczania do danej grupy, bądź kursantów. Kierujemy się zasadą: 
-„Nieważne, czy to metoda nowoczesna, czy tradycyjna – ważne, aby była skuteczna!”.</li>
+                    <li>Na naszych kursach łączymy metody tradycyjne z nowoczesnymi, ale przede wszystkim - dostosowujemy sposób nauczania do danej grupy, bądź kursantów. Kierujemy się zasadą: 
+„Nieważne, czy to metoda nowoczesna, czy tradycyjna - ważne, aby była skuteczna!”.</li>
                     <li>Prowadzimy nasze lekcje świadomie, unikamy przypadkowości i chaosu, jesteśmy elastyczni - najważniejszy jest dla nas kursant i jego postępy w nauce. </li>
                     <li>Każda minuta zajęć jest wykorzystana, uczymy się na zajęciach, a w domu jedynie utrwalamy przerobiony materiał.</li>
                     <li>Dzięki pracy w grupach lub parach, każdy ma okazję pracować nad sztuką mówienia podczas zajęć</li>

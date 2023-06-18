@@ -1,16 +1,15 @@
-import React from 'react';
-import { hydrate, render } from "react-dom";
+import ReactDOM from 'react-dom/client';
+import { hydrate } from "react-dom";
 import App from './App';
 
-// Using React root element without hydrating
-// ReactDOM.render(
-//     <App />, document.getElementById("root")
-// );
 
 // Root element of the whole Reract application
 const rootElement = document.getElementById("root");
 if (rootElement?.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+    hydrate(<App />, rootElement);
 } else {
-  render(<App />, rootElement);
+    const root = ReactDOM.createRoot(
+        rootElement as HTMLElement
+    );
+    root.render(<App />);
 }

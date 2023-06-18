@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Navbar } from './parts/Navbar/Navbar';
 import { AboutUs } from './parts/AboutUs/AboutUs';
 
@@ -10,11 +8,9 @@ import { SignUp } from './parts/SignUp/SignUp';
 import { OurLectors } from './parts/OurLectors/OurLectors';
 
 
-
 type Props = {
     children: string | JSX.Element | JSX.Element[];
 }
-
 
 
 export const MainFrame = ( { children } : Props ) => {
