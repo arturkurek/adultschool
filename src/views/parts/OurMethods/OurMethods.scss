@@ -11,19 +11,60 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 32px;
+        gap: 16px;
+        animation: slide-in-from-bottom 1s forwards;
+
+        
+        @media screen and (min-width: $screenSize_mobile) {
+            gap: 24px;
+        }
+        @media screen and (min-width: $screenSize_tablet) {
+            gap: 32px;
+        }
+        @media screen and (min-width: $screenSize_smallDesktop) {
+            
+        }
+        @media screen and (min-width: $screenSize_normalDesktop) {
+            max-width: $screenSize_smallDesktop + 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_largeDesktop) {
+            max-width: $screenSize_normalDesktop + 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
         .methods-tile {
             padding: 20px;
             background-color: var(--white-text);
             border-radius: 20px;
             color: var(--dark-text);
-            min-height: 360px;
+            min-height: unset;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            flex-basis: 280px;
+            flex-basis: 90%;
+
+
+            @media screen and (min-width: $screenSize_mobile) {
+                min-height: 360px;
+                flex-basis: 280px;
+            }
+            @media screen and (min-width: $screenSize_tablet) {
+
+            }
+            @media screen and (min-width: $screenSize_smallDesktop) {
+                
+            }
+            @media screen and (min-width: $screenSize_normalDesktop) {
+                
+            }
+            @media screen and (min-width: $screenSize_largeDesktop) {
+
+            }
 
             .tile-content {
                 line-height: 26px;

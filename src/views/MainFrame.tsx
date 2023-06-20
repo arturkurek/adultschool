@@ -9,12 +9,12 @@ import { OurLectors } from './parts/OurLectors/OurLectors';
 import { OurOffer } from './parts/OurOffer/OurOffer';
 
 
-type Props = {
-    children: string | JSX.Element | JSX.Element[];
-}
+// type Props = {
+//     children: string | JSX.Element | JSX.Element[];
+// }
 
 
-export const MainFrame = ( { children } : Props ) => {
+export const MainFrame = () => {
     return <main className='app-container '>
         <Navbar></Navbar>
         <AboutUs></AboutUs>
@@ -23,6 +23,5 @@ export const MainFrame = ( { children } : Props ) => {
         <OurOffer></OurOffer>
         <SignUp></SignUp>
         <ContactUs></ContactUs>
-        { children }
     </main>
 }

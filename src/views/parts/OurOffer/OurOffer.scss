@@ -1,6 +1,25 @@
+@import '../../../variables';
 
 
 .our-offer {
+
+    width: 100%;
+
+    @media screen and (min-width: $screenSize_mobile) {
+
+    }
+    @media screen and (min-width: $screenSize_tablet) {
+
+    }
+    @media screen and (min-width: $screenSize_smallDesktop) {
+        
+    }
+    @media screen and (min-width: $screenSize_normalDesktop) {
+
+    }
+    @media screen and (min-width: $screenSize_largeDesktop) {
+
+    }
 
     .offer-container {
         margin: 0 auto;
@@ -11,40 +30,49 @@
         display: flex;
         justify-content: center;
         padding: 12px;
-        table {
-            border: 1px solid black;
-            font-size: 20px;
-            border-spacing: 0;
-            border-radius: 4px;
+
+        .table {
+            width: 100%;
+            display: grid;
+            font-size: 24px;
+
+            // grid-template-columns: repeat(5, 1fr);
+            // grid-template-rows: repeat(10, 1fr);
             
-            thead {
-                tr {
-                    th {
-                        background-color: cyan;
-                        padding: 10px 0;
-                        border: 1px solid var(--dark-text);
-                    }
-                }   
+            grid-template-areas:
+                'header header header header header'
+                '. . . . .';
+            
+
+            @media screen and (min-width: $screenSize_mobile) {
+
+            }
+            @media screen and (min-width: $screenSize_tablet) {
+        
+            }
+            @media screen and (min-width: $screenSize_smallDesktop) {
+                grid-template-areas:
+                'header header header header header'
+                '. . . . .';
+            }
+            @media screen and (min-width: $screenSize_normalDesktop) {
+        
+            }
+            @media screen and (min-width: $screenSize_largeDesktop) {
+        
             }
 
-            tbody {
 
-                tr {
+            
+            .data {
+                padding: 16px 24px;
 
-                    td {
-                        padding: 12px 8px;
-                        border: 1px solid var(--dark-text);
-                        text-align: center;
-                        &.col1 {
-                            background-color: darkcyan;
-                        }
-                    }
-
+                &.left, &.head {
+                    background-color: var(--tile-background);
+                    color: var(--white-text);
                 }
-
             }
 
-            
         }
 
     }

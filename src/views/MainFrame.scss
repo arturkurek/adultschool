@@ -54,8 +54,66 @@
     .section-subtitle {
         font-size: 28px;
         font-weight: 400;
+
+        @media screen and (max-width: $screenSize_mobile) {
+
+        }
+        @media screen and (min-width: $screenSize_mobile) {
+
+        }
+        @media screen and (min-width: $screenSize_tablet) {
+            max-width: $screenSize_mobile;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_smallDesktop) {
+            max-width: $screenSize_tablet;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_normalDesktop) {
+            max-width: $screenSize_smallDesktop;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_largeDesktop) {
+            max-width: $screenSize_normalDesktop;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
+    .section-content {
+        font-size: 22px;
+        font-weight: 400;
+
+        @media screen and (max-width: $screenSize_mobile) {
+
+        }
+        @media screen and (min-width: $screenSize_mobile) {
+
+        }
+        @media screen and (min-width: $screenSize_tablet) {
+            max-width: $screenSize_mobile;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_smallDesktop) {
+            max-width: $screenSize_smallDesktop - 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_normalDesktop) {
+            max-width: $screenSize_normalDesktop - 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: $screenSize_largeDesktop) {
+            max-width: $screenSize_largeDesktop - 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     
     section {
         @include responsiveContainer();

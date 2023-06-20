@@ -7,8 +7,7 @@ import "./App.scss";
 
 
 const App = () => {    
-    return <MainFrame>
-    </MainFrame>
+    return <MainFrame></MainFrame>
 }
 
 

@@ -1,7 +1,9 @@
 @import "../../../variables";
 
 .about-us { 
-
+    background-color: var(--tile-background);
+    padding: 60px 0;
+    color: var(--white-text);
 
     .motto-container {
         margin: 0 auto;
@@ -12,20 +14,19 @@
         gap: 100px;
         position: relative;
         overflow: hidden;
+        flex-wrap: wrap;
         
         h3 {
             padding: 20px;
-            background-color: var(--tile-background);
             border-radius: 10px;
-            color: white;
         }
     
         h4 {
             width: fit-content;
             padding: 10px;
-            background-color: var(--tile-background);
+            
             border-radius: 10px;
-            color: white;
+            color: var(--white-text);
         }
         
         .woman {
@@ -47,7 +48,10 @@
 
 
     .about-us-container {
-
+        display: flex;
+        flex-direction: column;
+        min-height: 460px;
+        justify-content: space-evenly;
     }
 
     

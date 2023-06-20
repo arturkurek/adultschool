@@ -1,8 +1,13 @@
+@import "../../../variables";
 
 .our-lectors {
     background-color: var(--tile-background);
     color: white;
-    padding: 80px 12px;
+    padding: 32px 12px;
+
+    @media screen and (min-width: $screenSize_tablet) {
+        padding: 80px 12px;
+    }
 
     h3 {
         font-size: 18px;
@@ -15,9 +20,26 @@
         padding: 28px 0;
         display: flex;
         flex-direction: row;
-        gap: 32px;
+        gap: 16px;
         justify-content: center;
         flex-wrap: wrap;
+
+
+        @media screen and (min-width: $screenSize_mobile) {
+            gap: 24px;
+        }
+        @media screen and (min-width: $screenSize_tablet) {
+            gap: 32px;
+        }
+        @media screen and (min-width: $screenSize_smallDesktop) {
+            gap: 42px;
+        }
+        @media screen and (min-width: $screenSize_normalDesktop) {
+            gap: 56px;
+        }
+        @media screen and (min-width: $screenSize_largeDesktop) {
+            gap: 72px;
+        }
 
         .lectors-tile {
 
