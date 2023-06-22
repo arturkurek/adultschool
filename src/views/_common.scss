@@ -2,12 +2,24 @@
 section {
 
     .section-title {
+        font-size: 42px;
         text-align: center;
         text-transform: uppercase;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
     }
 
     .section-subtitle {
+        font-size: 26px;
         text-align: center;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+    .section-content {
+        font-size: 20px;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
     }
 
 }

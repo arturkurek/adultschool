@@ -7,12 +7,12 @@ import { ContactUs } from './parts/ContactUs/ContactUs';
 import { SignUp } from './parts/SignUp/SignUp';
 import { OurLectors } from './parts/OurLectors/OurLectors';
 import { OurOffer } from './parts/OurOffer/OurOffer';
+import { Footer } from './parts/Footer/Footer';
 
 
 // type Props = {
 //     children: string | JSX.Element | JSX.Element[];
 // }
-
 
 export const MainFrame = () => {
     return <main className='app-container '>
@@ -23,5 +23,6 @@ export const MainFrame = () => {
         <OurOffer></OurOffer>
         <SignUp></SignUp>
         <ContactUs></ContactUs>
+        <Footer></Footer>
     </main>
 }

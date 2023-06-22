@@ -4,14 +4,18 @@
 
     .contact-us-container {
         padding-top: 20px;
-        padding-left: 12px;
-        padding-right: 12px;
+        // padding-left: 12px;
+        // padding-right: 12px;
 
         .two-parts {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
 
+            @media screen and (min-width: $screenSize_tablet) {
+                flex-direction: row;
+            }
             .part {
     
                 &.left {

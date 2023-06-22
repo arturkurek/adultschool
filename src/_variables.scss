@@ -18,19 +18,16 @@ $screenSize_largeDesktop: 1360px;
     --white-text: #FFFFFF;
     --dark-text: #888888;
     --light-text: #BBBBBB;
+    --black-text: #333333;
 }
 
 
 @mixin responsiveContainer() {
     @media screen and (max-width: $screenSize_mobile) {
-        width: 100%;
-        padding-left: 8px;
-        padding-right: 8px;
+
     }
     @media screen and (min-width: $screenSize_mobile) {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+
     }
     @media screen and (min-width: $screenSize_tablet) {
 
