@@ -4,9 +4,19 @@
 .footer {
     background-color: var(--tile-background);
 
-    .footer-content {
-        
+    .footer-content { 
         min-height: 100px;
+        color: var(--white-text);
+        text-align: center;
+        position: relative;
+
+        span {
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
 }
