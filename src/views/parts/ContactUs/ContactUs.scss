@@ -4,23 +4,33 @@
 
     .contact-us-container {
         padding-top: 20px;
-        // padding-left: 12px;
-        // padding-right: 12px;
 
         .two-parts {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 8px;
 
-            @media screen and (min-width: $screenSize_tablet) {
+            @media screen and (min-width: $screenSize_smallDesktop) {
                 flex-direction: row;
+                align-items: flex-start;
             }
+
+            
+
             .part {
-    
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                
+                
                 &.left {
-                    max-width: 570px;
+                    align-items: center;
+                    width: 100%;
+                    padding: 12px;
                     img {
+                        max-width: 540px;
                         width: 100%;
                         height: auto;
                     }
@@ -28,6 +38,10 @@
     
                 &.right {
                     padding: 12px;
+                    width: 100%;
+                    height: 100%;
+                    margin: auto 0;
+
                     .form-title {
                         h2 {
                             text-align: center;
@@ -38,7 +52,7 @@
                     }
     
                     .form {
-                        padding: 0 24px;
+                        padding: 0;
                         form {
                             display: flex;
                             flex-direction: column;
@@ -62,7 +76,12 @@
                                     font-size: 16px;
                                 }
     
+                                a {
+                                    color: var(--black-text);
+                                }
+
                                 input[type="text"], input[type="email"], textarea {
+                                    width: 100%;
                                     padding: 10px 10px;
                                     border: none;
                                     border-bottom: 2px solid var(--light-text);
@@ -94,8 +113,14 @@
                                 }
                             }
                         }
+
+                        @media screen and (min-width: $screenSize_smallDesktop) {
+                            padding: 0 24px;
+                        }
+
                     }
                 }
+
             }
         }
         .bottom-info {

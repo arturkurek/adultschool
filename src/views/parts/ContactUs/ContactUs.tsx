@@ -22,60 +22,57 @@ export const ContactUs = () => {
         acceptTerms: false
     });
 
+    useEffect(() => {
+        if ( state.sendForm ) {
+            
+            const clearForm = ( clearInputs: boolean = false ) => {
+                setState({
+                    ...state,
+                    sendForm: false,
+                    userEmail: clearInputs ? "" : state.userEmail,
+                    userName: clearInputs ? "" : state.userName,
+                    userMessage: clearInputs ? "" : state.userMessage,
+                    acceptTerms: clearInputs ? false : state.acceptTerms,
+                });
+            }
 
-    const clearForm = ( clearInputs: boolean = false ) => {
-        setState({
-            ...state,
-            sendForm: false,
-            userEmail: clearInputs ? "" : state.userEmail,
-            userName: clearInputs ? "" : state.userName,
-            userMessage: clearInputs ? "" : state.userMessage,
-            acceptTerms: clearInputs ? false : state.acceptTerms,
-        });
-    }
-
-    const sendForm = () => {
-        console.log("userName: " + state.userName);
-        console.log("userEmail: " + state.userEmail);
-        console.log("userMessage: " + state.userMessage);
-        console.log("acceptTerms: " + state.acceptTerms);
-
-        if ( !state.acceptTerms ) {
-            console.warn("Zaakceptuj warunki!");
-            clearForm();
-            return;
-        }
-
-        if ( state.userName.length === 0 ) {
-            console.warn("Wpisz swoje imię i nazwisko");
-            clearForm();
-            return;
-        }
-
-        if ( state.userEmail.length === 0 ) {
-            console.warn("Wpisz swój email");
-            clearForm();
-            return;
-        }
-
-        if ( state.userMessage.length === 0 ) {
-            console.warn("Wpisz wiadomość");
-            clearForm();
-            return;
-        }
-
-        console.log("Wiadomość została wysłana!");
-        clearForm(true);
+            const sendRequest = () => {
+                console.log("userName: " + state.userName);
+                console.log("userEmail: " + state.userEmail);
+                console.log("userMessage: " + state.userMessage);
+                console.log("acceptTerms: " + state.acceptTerms);
         
-    }
+                if ( !state.acceptTerms ) {
+                    console.warn("Zaakceptuj warunki!");
+                    clearForm();
+                    return;
+                }
+        
+                if ( state.userName.length === 0 ) {
+                    console.warn("Wpisz swoje imię i nazwisko");
+                    clearForm();
+                    return;
+                }
+        
+                if ( state.userEmail.length === 0 ) {
+                    console.warn("Wpisz swój email");
+                    clearForm();
+                    return;
+                }
+        
+                if ( state.userMessage.length === 0 ) {
+                    console.warn("Wpisz wiadomość");
+                    clearForm();
+                    return;
+                }
+        
+                console.log("Wiadomość została wysłana!");
+                clearForm(true);
+            }
 
-    useEffect( () => {
-        if (state.sendForm) {
-            setTimeout( sendForm, 1000);
+            sendRequest();
         }
-
-    }, [ state.sendForm ]);
-
+    }, [ state ]);
 
     return <section className="container-full contact-us">
         <div className='container'>
