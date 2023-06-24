@@ -52,6 +52,24 @@
         flex-direction: column;
         min-height: 460px;
         justify-content: space-evenly;
+
+        .questions {
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                
+                li {
+                    padding: 14px 8px;
+                    // margin: 32px 0;
+                    // width: fit-content;
+                    // // width: 640px;
+                    font-size: 20px;
+                    // border-radius: 20px;
+                    // background-color: var(--white-text);
+                    // color: var(--dark-text);
+                }
+            }
+        }
     }
 
 }

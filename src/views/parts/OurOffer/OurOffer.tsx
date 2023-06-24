@@ -5,7 +5,7 @@ import "./OurOffer.scss";
 export const OurOffer = () => {
 
     return (
-    <section className="container-full our-offer">
+    <section className="container-full our-offer" id="our-offer">
         <div className='container'>
             <h1 className='section-title'>NASZA OFERTA</h1>
             <div className="offer-container">

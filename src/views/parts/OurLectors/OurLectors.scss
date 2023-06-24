@@ -48,6 +48,8 @@
             max-width: 320px;
             color: var(--dark-text);
             min-width: 240px;
+            
+            
 
             .tile-image {
                 padding: 24px;
@@ -56,6 +58,7 @@
                     max-width: 100%;
                     height: auto;
                     border-radius: 20px;
+                    box-shadow: 1px 1px 12px 0px var(--boxshadow);
                 }
             }
 

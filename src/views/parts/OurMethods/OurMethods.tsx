@@ -12,7 +12,7 @@ export const OurMethods = () => {
     }
 
     return (
-        <section className="container-full our-methods">
+        <section className="container-full our-methods" id="our-methods">
              <div className='container'>
                 <h1 className='section-title'>NASZE METODY</h1>
                 <div className="methods-container">

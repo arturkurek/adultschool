@@ -5,7 +5,7 @@ import "./OurLectors.scss";
 export const OurLectors = () => {
 
     return (
-        <section className="container-full our-lectors">
+        <section className="container-full our-lectors" id="our-lectors">
             <div className='container'>
                 <h1 className='section-title'>Nasi lektorzy</h1>
                 <h2 className="section-subtitle"><i>„Wybierz pracę, którą kochasz, a nie przepracujesz ani jednego dnia więcej w Twoim życiu.”</i> Konfucjusz (Kong Fuzi) </h2>

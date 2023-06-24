@@ -2,6 +2,9 @@
 
 .navbar {
 
+    background-color: var(--white-text);
+    box-shadow: 1px 1px 12px 0px var(--boxshadow);
+
     .navbar-container {
         min-height: 60px;
         display: flex;
@@ -9,17 +12,16 @@
         justify-items: flex-start;
         align-items: center;
         justify-content: space-between;
-        // margin: 30px auto;
         padding: 12px 24px;
     
         @include responsiveContainer();
     
         .logo {
-            // margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 70px;
+            cursor: pointer;
             img {
                 max-width: 100%;
                 height: auto; /** Safari compatible */
@@ -32,7 +34,92 @@
         }
     
     }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.4s;
+        a {
+            padding: 12px;
+            text-decoration: none;
+            font-size: 32px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+
+            &:hover, &:focus {
+                color: #f1f1f1;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: var(--white-text);
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+                color: var(--light-text);
+            }
+        }
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {
+            a {
+                font-size: 20px
+            }
+            .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    }
     
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        animation: slideDown 0.35s ease-out;
+
+        .navbar-container {
+            max-height: 40px;
+            .logo {
+                width: 50px;
+                img {
+                    max-width: 100%;
+                    height: auto; /** Safari compatible */
+                }
+            }
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+    }
     
 }
 

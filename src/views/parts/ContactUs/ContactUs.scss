@@ -17,7 +17,7 @@
                 align-items: flex-start;
             }
 
-            
+            box-shadow: 1px 1px 12px 0px var(--boxshadow);
 
             .part {
                 width: 50%;
@@ -33,6 +33,7 @@
                         max-width: 540px;
                         width: 100%;
                         height: auto;
+                        // box-shadow: 1px 1px 12px 0px var(--boxshadow);
                     }
                 }
     
@@ -111,6 +112,11 @@
                                         background-color: var(--light-text);
                                     }
                                 }
+                                
+                                input[type="checkbox"] {
+                                    margin-right: 10px;
+                                }
+                                
                             }
                         }
 

@@ -35,6 +35,9 @@
             width: 100%;
             font-size: 20px;
             display: block;
+            padding: 4px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 12px 0px var(--boxshadow);
             
             .data-group {
                 // padding: 12px;
@@ -43,15 +46,19 @@
                 margin: 12px 0;
                 box-shadow: 1px 1px 6px 0px var(--light-text);
 
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                &:first-of-type {
+                    margin-top: 0;
+                }
+
                 .group {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
 
-                    // :nth-child(2) {
-                    //     background-color: var(--dark-text);
-                    // }
                     .header {
                         width: 100%;
                         background-color: unset;
@@ -98,6 +105,9 @@
             grid-template-rows: repeat(9, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
+
+            box-shadow: 1px 1px 12px 0px var(--boxshadow);
+
         }
 
         .data {

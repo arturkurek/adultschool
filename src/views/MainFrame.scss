@@ -8,11 +8,11 @@
     padding: 0;
     color: var(--black-text);
 
-    background-color: darkgrey;
+    // background-color: darkgrey;
 
     .container {
         @include responsiveContainer();
-        background-color: darkcyan;;
+        // background-color: darkcyan;;
     }
 
     .container-full {

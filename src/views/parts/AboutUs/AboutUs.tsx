@@ -4,7 +4,7 @@ import "./AboutUs.scss";
 
 
 export const AboutUs = () => {
-    return <section className='container-full about-us' data-testid="about-us-test-id">
+    return <section className='container-full about-us' data-testid="about-us-test-id" id="about-us">
         <div className='container'>
             <div className="motto-container">
                 <img className="woman" src="/static/images/woman.png" alt="adult students" />

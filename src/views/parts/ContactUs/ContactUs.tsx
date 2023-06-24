@@ -74,7 +74,7 @@ export const ContactUs = () => {
         }
     }, [ state ]);
 
-    return <section className="container-full contact-us">
+    return <section className="container-full contact-us" id="contact">
         <div className='container'>
             <h1 className='section-title'>Skontaktuj się z nami!</h1>
             <h3 className='section-subtitle'>Chętnie odpowiemy na wszelkie pytania.</h3>
@@ -132,6 +132,7 @@ export const ContactUs = () => {
                                         checked={state.acceptTerms}
                                         onChange={(e) => setState({...state, acceptTerms: e.target.checked })}
                                     />
+                                    <span className="checkmark"></span>
                                     <span>Akceptuję <a href="/warunki">Warunki</a></span>
                                 </div>
                                 <div className="form-group vertical center">

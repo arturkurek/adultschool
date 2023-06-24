@@ -15,7 +15,7 @@ import { Footer } from './parts/Footer/Footer';
 // }
 
 export const MainFrame = () => {
-    return <main className='app-container '>
+    return <main className='app-container' id="app-container">
         <Navbar></Navbar>
         <AboutUs></AboutUs>
         <OurMethods></OurMethods>
