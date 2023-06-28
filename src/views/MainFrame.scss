@@ -6,19 +6,14 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    color: var(--black-text);
-
-    // background-color: darkgrey;
+    color: var(--color-black-text);
 
     .container {
         @include responsiveContainer();
-        // background-color: darkcyan;;
     }
 
     .container-full {
         width: 100%;
-        // max-width: 100%;
-        // margin: 0;
     }
     
 

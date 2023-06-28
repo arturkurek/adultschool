@@ -92,7 +92,7 @@ export const ContactUs = () => {
                         <div className="form">
                             <form id="contact-form">
                                 <div className="form-group">
-                                    <label htmlFor="username" >Imię i nazwisko</label>
+                                    {/* <label htmlFor="username" >Imię i nazwisko</label> */}
                                     <input
                                         type="text"
                                         id="username"
@@ -103,7 +103,7 @@ export const ContactUs = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="email">E-mail</label>
+                                    {/* <label htmlFor="email">E-mail</label> */}
                                     <input
                                         type="email"
                                         id="email"
@@ -114,10 +114,11 @@ export const ContactUs = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="message" >Wiadomość</label>
+                                    {/* <label htmlFor="message" >Wiadomość</label> */}
                                     <textarea
                                         id="message"
                                         name="message"
+                                        placeholder='Wiadomość'
                                         value={state.userMessage}
                                         onChange={(e) => setState({...state, userMessage: e.target.value})}
                                         cols={ 50 }

@@ -1,51 +1,9 @@
 @import "../../../variables";
 
 .about-us { 
-    background-color: var(--tile-background);
+    background-color: var(--color-background-dark);
     padding: 60px 0;
-    color: var(--white-text);
-
-    .motto-container {
-        margin: 0 auto;
-        padding: 50px 0;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 100px;
-        position: relative;
-        overflow: hidden;
-        flex-wrap: wrap;
-        
-        h3 {
-            padding: 20px;
-            border-radius: 10px;
-        }
-    
-        h4 {
-            width: fit-content;
-            padding: 10px;
-            
-            border-radius: 10px;
-            color: var(--white-text);
-        }
-        
-        .woman {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            opacity: 0;
-            animation: fade-in 1s ease-in forwards;
-            max-width: 300px;
-        }
-    
-        .motto {
-            margin: 12px 0;
-            overflow: hidden;
-            transform: translateY(100%);
-            animation: slide-in-from-bottom 1s forwards;
-        }
-    }
+    color: var(--color-white);
 
     .about-us-container {
         display: flex;

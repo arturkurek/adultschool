@@ -8,6 +8,7 @@ import { SignUp } from './parts/SignUp/SignUp';
 import { OurLectors } from './parts/OurLectors/OurLectors';
 import { OurOffer } from './parts/OurOffer/OurOffer';
 import { Footer } from './parts/Footer/Footer';
+import { Header } from './parts/Header/Header';
 
 
 // type Props = {
@@ -17,6 +18,7 @@ import { Footer } from './parts/Footer/Footer';
 export const MainFrame = () => {
     return <main className='app-container' id="app-container">
         <Navbar></Navbar>
+        <Header></Header>
         <AboutUs></AboutUs>
         <OurMethods></OurMethods>
         <OurLectors></OurLectors>

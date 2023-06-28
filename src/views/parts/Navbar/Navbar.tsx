@@ -1,17 +1,20 @@
-import { useState, useEffect } from 'react';
+import { 
+    // useState, 
+    useEffect 
+} from 'react';
 import './Navbar.scss';
 
 
-interface NavbarState {
-    opened: boolean;
-}
+// interface NavbarState {
+//     opened: boolean;
+// }
 
 
 export const Navbar = () => {
 
-    const [ state, setState ] = useState<NavbarState>({
-        opened: false
-    });
+    // const [ state, setState ] = useState<NavbarState>({
+    //     opened: false
+    // });
 
     const closeNav = () => {
         const nav = document.getElementById("myNav");
@@ -55,10 +58,10 @@ export const Navbar = () => {
         <div className='container'>
             <nav className="navbar-container" data-testid="navbar-test-id">
                 <div className="logo" onClick={ homeLink }>
-                    <img src="/static/images/logo.png" alt="logo" data-testid="navbar-logo-test-id" />
+                    <img src="/static/images/Logo_adult.png" alt="logo" data-testid="navbar-logo-test-id" />
                 </div>
                 <div className = "hamburger" onClick={ openNav }>
-                    <img src="/static/images/hamburger.svg" alt="hamburger" />
+                    &#8801;
                 </div>
             </nav>
             
@@ -67,7 +70,7 @@ export const Navbar = () => {
                 <div className="overlay-content">
                     <a href="#about-us" onClick={ closeNav }>O nas</a>
                     <a href="#our-methods" onClick={ closeNav }>Nasze metody</a>
-                    <a href="#our-lectors" onClick={ closeNav }>Nasie lektorzy</a>
+                    <a href="#our-lectors" onClick={ closeNav }>Nasi lektorzy</a>
                     <a href="#our-offer" onClick={ closeNav }>Nasza oferta</a>
                     <a href="#sign-in" onClick={ closeNav }>Zapisz się</a>
                     <a href="#contact" onClick={ closeNav } >Kontakt</a>

@@ -2,6 +2,14 @@
 
 .contact-us {
 
+    // background-color: var(--color-background-dark);
+    // color: var(--color-white);
+
+    background-color: var(--color-white);
+    color: var(--color-black-text);
+
+    padding: 32px 12px;
+
     .contact-us-container {
         padding-top: 20px;
 
@@ -16,14 +24,11 @@
                 flex-direction: row;
                 align-items: flex-start;
             }
-
-            box-shadow: 1px 1px 12px 0px var(--boxshadow);
-
+            box-shadow: 1px 1px 12px 0px rgba($color-black-text, 0.15);
             .part {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
-                
                 
                 &.left {
                     align-items: center;
@@ -33,7 +38,6 @@
                         max-width: 540px;
                         width: 100%;
                         height: auto;
-                        // box-shadow: 1px 1px 12px 0px var(--boxshadow);
                     }
                 }
     
@@ -78,20 +82,23 @@
                                 }
     
                                 a {
-                                    color: var(--black-text);
+                                    color: var(--color-black-text);
                                 }
 
                                 input[type="text"], input[type="email"], textarea {
                                     width: 100%;
                                     padding: 10px 10px;
                                     border: none;
-                                    border-bottom: 2px solid var(--light-text);
+                                    border-bottom: 2px solid var(--color-light);
+                                    background-color: var(--color-white);
                                     outline: none;
                                     font-size: 16px;
                                     line-height: 24px;
                                     font-family: 'Ubuntu', sans-serif;
                                     &::placeholder {
-                                        color: var(--light-text);
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        color: rgba($color-black-text, 0.4);
                                     }
                                 }
     
@@ -101,15 +108,18 @@
                                     border: none;
                                     cursor: pointer;
                                     border-radius: 24px;
-                                    color: var(--white-text);
+                                    color: var(--color-white);
                                     font-size: 18px;
                                     font-weight: 700;
                                     text-transform: uppercase;
-                                    background-color: var(--tile-background);
-                                    
+                                    background-color: var(--color-background-light);
+                                    transition: background-color 0.1s ease-in-out;
+                                    &:hover {
+                                        background-color: var(--color-background-dark);
+                                    }
                                     &:disabled {
                                         cursor: not-allowed;
-                                        background-color: var(--light-text);
+                                        background-color: var(--color-light);
                                     }
                                 }
                                 
@@ -169,9 +179,6 @@
 
                 .content {
                     padding: 6px 16px 16px 16px;
-                    p {
-
-                    }
                 }
             }
 

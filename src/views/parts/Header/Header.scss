@@ -1,0 +1,49 @@
+@import "../../../variables";
+
+
+.header {
+    background-color: var(--color-white);
+    color: var(--tile-background);
+
+    .motto-container {
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+        position: relative;
+        overflow: hidden;
+        flex-wrap: wrap;
+        
+        h3 {
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        h4 {
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .woman {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fade-in 1s ease-in forwards;
+            max-width: 300px;
+            box-shadow: 1px 1px 12px 0 rgba($color-black-text, 0.2);
+        }
+    
+        .motto {
+            margin: 12px 0;
+            overflow: hidden;
+            transform: translateY(100%);
+            animation: slide-in-from-bottom 1s forwards;
+        }
+    }
+
+}

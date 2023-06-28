@@ -6,13 +6,6 @@ import "./AboutUs.scss";
 export const AboutUs = () => {
     return <section className='container-full about-us' data-testid="about-us-test-id" id="about-us">
         <div className='container'>
-            <div className="motto-container">
-                <img className="woman" src="/static/images/woman.png" alt="adult students" />
-                <div className='motto'>
-                    <h3>„Jeśli potrafisz o czymś marzyć, to potrafisz także tego dokonać”. ~ Walt Disney</h3>
-                    <h4><i>If you can dream it, you can do it!</i></h4>
-                </div>
-            </div>
             <h1 className='section-title'>O NAS</h1>
             <div className="about-us-container">
                 <h1>

@@ -2,7 +2,9 @@
 
 
 .our-offer {
-
+    background-color: var(--color-white);
+    color: var(--color-black-text);
+    padding: 32px 12px;
     width: 100%;
 
     @media screen and (min-width: $screenSize_mobile) {
@@ -37,14 +39,14 @@
             display: block;
             padding: 4px;
             border-radius: 12px;
-            box-shadow: 1px 1px 12px 0px var(--boxshadow);
+            box-shadow: 1px 1px 12px 0px rgba($color-black-text, 0.15);
             
             .data-group {
                 // padding: 12px;
-                border: 1px solid var(--tile-background);
+                border: 1px solid var(--color-background-dark);
                 border-radius: 8px;
                 margin: 12px 0;
-                box-shadow: 1px 1px 6px 0px var(--light-text);
+                box-shadow: 1px 1px 6px 0px rgba($color-black-text, 0.15);
 
                 &:last-of-type {
                     margin-bottom: 0;
@@ -63,14 +65,14 @@
                         width: 100%;
                         background-color: unset;
                         color: #333;
-                        text-align: left;
+                        text-align: center;
                         
                     }
                     .table-row {
                         width: 100%;
-                        text-align: left;
+                        text-align: center;
                         &.title {
-                            background-color: var(--tile-background);
+                            background-color: var(--color-background-dark);
                             color: var(--white-text);
                             text-transform: uppercase; 
                             
@@ -79,8 +81,8 @@
                 }
                 
                 .row-title {
-                    background-color: var(--tile-background);
-                    color: var(--white-text);
+                    background-color: var(--color-background-dark);
+                    color: var(--color-white);
                     text-transform: uppercase;
                     border-top-left-radius: 6px;
                     border-top-right-radius: 6px;
@@ -89,9 +91,10 @@
             }
             .data {
                 text-align: center;
+                height: 86px;
             }
             .left {
-                background-color: var(--tile-background);
+                background-color: var(--color-background-dark);
             }
             
         }
@@ -106,22 +109,28 @@
             grid-column-gap: 0px;
             grid-row-gap: 0px;
 
-            box-shadow: 1px 1px 12px 0px var(--boxshadow);
+            box-shadow: 1px 1px 12px 0px rgba($color-black-text, 0.15);
 
         }
 
         .data {
             padding: 12px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            border-bottom: 1px solid var(--color-light);
         }
 
         .header {
-            background-color: var(--tile-background);
-            color: var(--white-text);
+            background-color: var(--color-background-dark);
+            color: var(--color-white);
         }
 
         .left {
-            background-color: var(--tile-background);
-            color: var(--white-text);
+            background-color: var(--color-background-dark);
+            color: var(--color-white);
             text-transform: uppercase;
         }
 

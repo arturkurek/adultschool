@@ -1,8 +1,8 @@
 @import "../../../variables";
 
 .our-lectors {
-    background-color: var(--tile-background);
-    color: white;
+    background-color: var(--color-white);
+    color: var(--color-black-text);
     padding: 32px 12px;
 
     @media screen and (min-width: $screenSize_tablet) {
@@ -13,7 +13,7 @@
         font-size: 18px;
         font-weight: 400;
         text-align: center;
-        line-height: 26px;
+        line-height: 30px;
     }
 
     .lectors-container {
@@ -48,8 +48,6 @@
             max-width: 320px;
             color: var(--dark-text);
             min-width: 240px;
-            
-            
 
             .tile-image {
                 padding: 24px;
@@ -58,7 +56,7 @@
                     max-width: 100%;
                     height: auto;
                     border-radius: 20px;
-                    box-shadow: 1px 1px 12px 0px var(--boxshadow);
+                    box-shadow: 1px 1px 12px 0px rgba($color-black-text, 0.3);
                 }
             }
 
@@ -73,7 +71,7 @@
                 padding: 24px;
                 text-align: center;
                 font-style: italic;
-                line-height: 22px;
+                line-height: 24px;
             }
         }
 

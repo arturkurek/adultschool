@@ -2,8 +2,8 @@
 
 
 .our-methods {
-    background-color: var(--tile-background);
-    color: white;
+    background-color: var(--color-background-dark);
+    color: var(--color-white);
     padding: 60px 0;
 
     .methods-container {
@@ -38,15 +38,16 @@
 
         .methods-tile {
             padding: 20px;
-            background-color: var(--white-text);
+            background-color: var(--color-white);
             border-radius: 20px;
-            color: var(--dark-text);
+            color: var(--color-black-text);
             min-height: unset;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
             flex-basis: 90%;
+            box-shadow: 1px 1px 12px 0 rgba($color-black-text, 0.35);
 
 
             @media screen and (min-width: $screenSize_mobile) {
@@ -74,14 +75,14 @@
             }
 
             .tile-arrow {
+                color: var(--color-background-dark);
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
                 width: 100%;
-                img {
-                    max-width: 42px;
-                    height: auto;
-                }
+                font-size: 32px;
+                font-weight: 700;
+                user-select: none;
             }
 
         }

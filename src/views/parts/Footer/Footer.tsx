@@ -10,7 +10,7 @@ export const Footer = () => {
         <section className="container-full footer">
             <footer className="container">
                 <div className="footer-content">
-                    <span>Wszelkie prawa zastrzeżone &#xA9; { currentYear }</span>   
+                    <span>AdultSchool &#xA9; { currentYear }</span>   
                 </div>
             </footer>
         </section>

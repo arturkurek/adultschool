@@ -1,40 +1,49 @@
 
-
-/* media queries */
-
-$screenSize_mobile: 600px;
-
-$screenSize_tablet: 768px;
-
-$screenSize_smallDesktop: 992px;
-
-$screenSize_normalDesktop: 1200px;
-
-$screenSize_largeDesktop: 1360px;
+/* ======= Media queries ======= */
+$screenSize_mobile:         600px;
+$screenSize_tablet:         768px;
+$screenSize_smallDesktop:   992px;
+$screenSize_normalDesktop:  1200px;
+$screenSize_largeDesktop:   1360px;
+/* ============================== */
 
 
+/* ======= Defined colors ========= */
+$color-background-dark:     #0F6263;
+$color-background-medium:   #106063;
+$color-background-light:    #619192;
+$color-white:               #FCFCFC;
+$color-light:               #B3CAC9;
+$color-black-text:          #111111;  
+/* ================================ */
+
+
+/* ========== CSS Variables ======================= */
 :root {
-    --tile-background: #4551dd;
-    --white-text: #FFFFFF;
-    --dark-text: #888888;
-    --light-text: #BBBBBB;
-    --black-text: #333333;
-    --boxshadow: #4551dd33;
+    --color-background-dark:    #{ $color-background-dark };
+    --color-background-medium:  #{ $color-background-medium };
+    --color-background-light:   #{ $color-background-light };
+    --color-white:              #{ $color-white };
+    --color-light:              #{ $color-light };
+    --color-black-text:         #{ $color-black-text };
 }
+/* ================================================ */
 
 
+/**
+* Set container width for various devices: mobile, tablet, pc
+*/
 @mixin responsiveContainer() {
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (max-width: $screenSize_mobile) {
-        max-width: 100%;
-        width: 100%;
+        max-width: 95%;
+        width: 95%;
     }
     @media screen and (min-width: $screenSize_mobile) {
-        // max-width: 600px;
-        max-width: 100%;
-        width: 100%;
+        max-width: 90%;
+        width: 90%;
     }
     @media screen and (min-width: $screenSize_tablet) {
         max-width: 800px;
@@ -49,4 +58,3 @@ $screenSize_largeDesktop: 1360px;
         max-width: 1300px;
     }
 }
-
