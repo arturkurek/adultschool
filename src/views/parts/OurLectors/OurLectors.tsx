@@ -35,17 +35,6 @@ export const OurLectors = () => {
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         </div>
                     </div>
-                    <div className="lectors-tile">
-                        <div className="tile-image">
-                            <img src="/static/images/teacher-02.jpg" alt="avatar" />
-                        </div>
-                        <div className="tile-title">
-                        Zuzanna Malinowska
-                        </div>
-                        <div className="tile-content">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

@@ -1,9 +1,12 @@
 @import "../../../variables";
 
+.app-container {
 .navbar {
 
     background-color: var(--color-background-dark);
     box-shadow: 1px 1px 12px 0px rgba($color-black-text, 0.35);
+
+    border-bottom: none !important;
 
     .navbar-container {
         min-height: 60px;
@@ -131,4 +134,4 @@
     }
     
 }
-
+}
