@@ -83,7 +83,7 @@ export const ContactUs = () => {
                 
                 <div className="two-parts">
                     <div className="part left">
-                        <img src="/static/images/contact.jpg" alt="Contact"/>
+                        <img src="/static/images/teacher-drawing-class.jpg" alt="Contact"/>
                     </div>
                     <div className="part right">
                         <div className="form-title">
@@ -149,39 +149,6 @@ export const ContactUs = () => {
                                     />
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bottom-info">
-                    <div className="info-part">
-                        <div className="title">
-                            <img src="/static/images/phone.png" alt="Contact phone" />
-                            <span>Zadzwoń do nas</span>
-                        </div>
-                        <div className="content">
-                            <p>(+48) 234880234,</p>
-                            <p>(+48) 234880234</p>
-                        </div>
-                    </div>
-                    <div className="info-part">
-                        <div className="title">
-                            <img src="/static/images/location.png" alt="Contact location" />
-                            <span>Lokalizacja</span>
-                        </div>
-                        <div className="content">
-                            <p>121 Rock Sreet, 21 Avenue,</p>
-                            <p>New York, NY 92103-9000</p>
-                        </div>
-                    </div>
-                    <div className="info-part">
-                        <div className="title">
-                            <img src="/static/images/clock.png" alt="Contact location" />
-                            <span>Godziny otwarcia</span>
-                        </div>
-                        <div className="content">
-                            <p>Mon - Fri …… 11 am - 8 pm, Sat,</p>
-                            <p>Sun  …… 6 am - 8 pm</p>
                         </div>
                     </div>
                 </div>

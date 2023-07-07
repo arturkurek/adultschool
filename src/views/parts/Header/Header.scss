@@ -2,7 +2,7 @@
 
 
 .header {
-    background-color: var(--color-white);
+    background-color: #fcfcfc;
     color: var(--tile-background);
 
     .motto-container {
@@ -11,27 +11,28 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         gap: 100px;
         position: relative;
         overflow: hidden;
         flex-wrap: wrap;
         
-        h3 {
-            padding: 20px;
+        h1 {
+            padding: 20px 0;
             border-radius: 10px;
+            font-size: 32px;
         }
     
-        h4 {
+        h2 {
             width: fit-content;
             padding: 10px;
             border-radius: 10px;
+            font-size: 26px;
         }
         
-        .woman {
+        .header-image {
             width: 100%;
             height: auto;
-            border-radius: 50%;
             opacity: 0;
             animation: fade-in 1s ease-in forwards;
             max-width: 300px;
@@ -43,7 +44,28 @@
             overflow: hidden;
             transform: translateY(100%);
             animation: slide-in-from-bottom 1s forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
         }
+
+    }
+
+    @media screen and (min-width: $screenSize_tablet) {
+        
+        .motto-container {
+
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .header-image {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+        
     }
 
 }

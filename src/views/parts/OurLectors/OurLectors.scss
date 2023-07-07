@@ -1,8 +1,9 @@
 @import "../../../variables";
 
 .our-lectors {
-    background-color: var(--color-white);
-    color: var(--color-black-text);
+    background-color: #619192;
+    // color: var(--color-black-text);
+    color: var(--color-white);
     padding: 32px 12px;
 
     @media screen and (min-width: $screenSize_tablet) {
@@ -75,6 +76,46 @@
             }
         }
 
+    }
+
+    .lectors-content-container {
+        display: flex;
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+
+        .section-content {
+            max-width: 90%;
+            text-align: justify;
+        }
+
+        .tile-image {
+            max-width: 300px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    @media screen and (min-width: $screenSize_tablet) {
+
+        .lectors-content-container {
+            flex-direction: row;
+            
+
+            .section-content {
+    
+            }
+    
+            .tile-image {
+    
+            }
+        }
+
+        
     }
 
 }

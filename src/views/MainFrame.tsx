@@ -9,6 +9,7 @@ import { OurLectors } from './parts/OurLectors/OurLectors';
 import { OurOffer } from './parts/OurOffer/OurOffer';
 import { Footer } from './parts/Footer/Footer';
 import { Header } from './parts/Header/Header';
+import { LocationPart } from './parts/Location/LocationPart';
 
 
 // type Props = {
@@ -25,6 +26,7 @@ export const MainFrame = () => {
         <OurOffer></OurOffer>
         <SignUp></SignUp>
         <ContactUs></ContactUs>
+        <LocationPart></LocationPart>
         <Footer></Footer>
     </main>
 }
