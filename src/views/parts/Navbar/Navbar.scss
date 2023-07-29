@@ -37,7 +37,7 @@
             color: var(--color-white);
             font-size: 46px;
             font-weight: 400;
-            transition: color 0.1s ease-in-out;
+            transition: color 0.2s ease-in-out;
 
             &:hover {
                 color: var(--color-background-light);
@@ -64,7 +64,7 @@
             font-size: 32px;
             color: var(--color-white);
             display: block;
-            transition: 0.2s;
+            transition: color 0.2s ease-in-out;
 
             &:hover, &:focus {
                 color: var(--color-light);

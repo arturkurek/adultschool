@@ -79,11 +79,13 @@
     }
 
     .lectors-content-container {
+        padding: 20px 0;
         display: flex;
         
         flex-direction: column-reverse;
         align-items: center;
-        gap: 30px;
+        justify-content: center;
+        gap: 46px;
 
         .section-content {
             max-width: 90%;
@@ -91,8 +93,9 @@
         }
 
         .tile-image {
-            max-width: 300px;
+            max-width: 48%;
             img {
+                
                 width: 100%;
                 height: auto;
             }

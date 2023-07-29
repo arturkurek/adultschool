@@ -8,9 +8,6 @@ export const OurOffer = () => {
     <section className="container-full our-offer" id="our-offer">
         <div className='container'>
             <h1 className='section-title'>NASZA OFERTA</h1>
-            <div className="offer-container">
-                <h2>Poznaj naszą <a href="#">ofertę</a></h2>
-            </div>
             <div className="offer-table-container">
                 <div className="table-mobile"> 
                     <div className="data-group">

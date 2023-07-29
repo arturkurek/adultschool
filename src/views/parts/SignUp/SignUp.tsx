@@ -8,8 +8,7 @@ export const SignUp = () => {
     return (
         <section className="container-full sign-up" id="sign-in">
             <div className="container">
-                <h1 className='section-title'>Zapisz się!</h1>
-                <h2 style={{textAlign:"center"}}>[w takcie przygotowania...]</h2>
+                <h1 className='section-title'><a href="https://adultofenglish.langlion.com/">Zapisz się!</a></h1>
             </div>
         </section>
     )
